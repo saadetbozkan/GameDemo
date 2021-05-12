@@ -12,7 +12,7 @@ import gameDemo.entities.Gamer;
 public class Main {
 
 	public static void main(String[] args) {
-		Game game = new Game(1, "Pc Call Of Duty Wwýý", 250);
+		Game game = new Game(1, "Pc Call Of Duty WwÃ½Ã½", 250);
 		GameManager gameManager = new GameManager();
 		gameManager.save(game);
 		game.setGamePrice(260);
@@ -21,7 +21,7 @@ public class Main {
 
 		System.out.println("\n***********************\n");
 
-		Gamer gamer = new Gamer(1, "Saadet", "Bozkan", 1996, "39934448442");
+		Gamer gamer = new Gamer(1, "Saadet", "Bozkan", 1990, "11111111111");
 		GamerManager gamerManager = new GamerManager(new MernisServiceAdapter());
 		gamerManager.save(gamer);
 		gamer.setId(2);
@@ -31,7 +31,7 @@ public class Main {
 
 		System.out.println("\n***********************\n");
 
-		Campaing campaing = new Campaing(1, "Bahar Kampanyasý", 10);
+		Campaing campaing = new Campaing(1, "Bahar KampanyasÃ½", 10);
 		CampaingManager campaingManager = new CampaingManager();
 		campaingManager.save(campaing);
 		campaing.setDiscount(20);

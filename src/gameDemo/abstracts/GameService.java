@@ -2,7 +2,7 @@ package gameDemo.abstracts;
 
 import gameDemo.entities.Game;
 
-public interface GameSevice {
+public interface GameService {
 	void save(Game game);
 
 	void update(Game game);

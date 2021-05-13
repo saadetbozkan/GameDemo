@@ -1,5 +1,9 @@
 package gameDemo;
 
+import gameDemo.abstracts.CampaingService;
+import gameDemo.abstracts.GameService;
+import gameDemo.abstracts.GamerService;
+import gameDemo.abstracts.SaleService;
 import gameDemo.adaptors.MernisServiceAdapter;
 import gameDemo.concretes.CampaingManager;
 import gameDemo.concretes.GameManager;
@@ -13,32 +17,33 @@ public class Main {
 
 	public static void main(String[] args) {
 		Game game = new Game(1, "Pc Call Of Duty Wwýý", 250);
-		GameManager gameManager = new GameManager();
-		gameManager.save(game);
+		GameService gameService = new GameManager();
+		gameService.save(game);
 		game.setGamePrice(260);
-		gameManager.update(game);
-		gameManager.delete(game);
+		gameService.update(game);
+		gameService.delete(game);
 
 		System.out.println("\n***********************\n");
 
 		Gamer gamer = new Gamer(1, "Saadet", "Bozkan", 1996, "39934448442");
-		GamerManager gamerManager = new GamerManager(new MernisServiceAdapter());
-		gamerManager.save(gamer);
+		GamerService gamerService = new GamerManager(new MernisServiceAdapter());
+		gamerService.save(gamer);
 		gamer.setId(2);
 		;
-		gamerManager.update(gamer);
-		gamerManager.delete(gamer);
+		gamerService.update(gamer);
+		gamerService.delete(gamer);
 
 		System.out.println("\n***********************\n");
 
 		Campaing campaing = new Campaing(1, "Bahar Kampanyasý", 10);
-		CampaingManager campaingManager = new CampaingManager();
-		campaingManager.save(campaing);
+		CampaingService campaingService = new CampaingManager();
+		campaingService.save(campaing);
 		campaing.setDiscount(20);
-		campaingManager.update(campaing);
-		SaleManager saleManager = new SaleManager();
-		saleManager.buy(gamer, game);
-		saleManager.buyWithCampaingCampain(gamer, game, campaing);
+		campaingService.update(campaing);
+		
+		SaleService saleService = new SaleManager();
+		saleService.buy(gamer, game);
+		saleService.buyWithCampaingCampain(gamer, game, campaing);
 
 	}
 

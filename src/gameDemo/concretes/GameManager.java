@@ -1,9 +1,9 @@
 package gameDemo.concretes;
 
-import gameDemo.abstracts.GameSevice;
+import gameDemo.abstracts.GameService;
 import gameDemo.entities.Game;
 
-public class GameManager implements GameSevice {
+public class GameManager implements GameService {
 	@Override
 	public void save(Game game) {
 

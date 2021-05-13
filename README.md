@@ -19,9 +19,9 @@ Oyuncu silindi.
 
 ***********************
 
-Yeni kampanya eklendi : Bahahr Kampanyası
+Yeni kampanya eklendi : Bahar Kampanyası
 
-Yeni kampanya guncellendi : Bahahr Kampanyası indirim oranı: 20.0
+Yeni kampanya guncellendi : Bahar Kampanyası indirim oranı: 20.0
 
 Saadet Bozkan Pc Call Of Duty Wwıı oyununu aldı.Fiyat : 260.0
 
